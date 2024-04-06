@@ -1,5 +1,5 @@
 var array = [];
-var arrayNguyenTo = [];
+var arrayNguyen = [];
 function add() {
   addArray(array, "input", "output");
 }
@@ -67,12 +67,14 @@ function timSoNguyenToDauTien() {
 }
 
 function addSoNguyen() {
-  addArray(arrayNguyenTo, "inputFloat", "txtArrayFloat");
+  addArray(arrayNguyen, "inputFloat", "txtArrayFloat");
 }
 function demSoNguyen() {
   var count = 0;
-  for (let index = 0; index < arrayNguyenTo.length; index++) {
-    if (Number.isInteger(arrayNguyenTo[index])) {
+  var combinedArray = array.concat(arrayNguyen);
+  console.log(combinedArray)
+  for (let index = 0; index < combinedArray.length; index++) {
+    if (Number.isInteger(combinedArray[index])) {
       count++;
     }
   }

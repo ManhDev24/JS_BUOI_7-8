@@ -4,6 +4,12 @@ function addArray(arr, inputId, outputId) {
   document.getElementById(outputId).innerHTML = `<p>${arr}</p>`;
 }
 
+/**
+ * Calculate the sum of all positive numbers in the given array.
+ *
+ * @param {Array} array - The input array to calculate the sum from.
+ * @return {number} The sum of all positive numbers in the array.
+ */
 function tinhTongSoDuong(array) {
   var sum = 0;
   for (let index = 0; index < array.length; index++) {
